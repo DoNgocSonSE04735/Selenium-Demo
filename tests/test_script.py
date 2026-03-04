@@ -10,7 +10,7 @@ def test_testcase1(login_action, common_action):
     login_action.verify_forgot_password_is_visible()
     login_action.verify_login_button_is_disabled()
 
-@pytest.mark.smoke4
+@pytest.mark.smoke
 def test_testcase2(login_action, common_action, homepage_action):
     test_data = data["testcase_2"]
     common_action.navigate_to_url(data["url"])
